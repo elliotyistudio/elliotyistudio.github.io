@@ -12,16 +12,18 @@
   <main>
     <p class="wordmark small"><a href="index.html">Fathom Deeper</a></p>
     <h1>Privacy policy</h1>
-    <p class="updated">Effective 20 October 2026</p>
+    <p class="updated">Effective 26 October 2026</p>
 
     <p>Fathom Deeper is a science video channel. This policy covers this website and the two small apps the channel uses to publish its own videos: <strong>Fathom Deeper Uploader</strong> (Google and YouTube) and <strong>Fathom Deeper Publisher</strong> (Meta and Instagram). Only the channel's owner uses these apps, and only on the channel's own accounts. They are not offered to anyone else.</p>
 
     <h2>What the apps access</h2>
     <ul>
-      <li><strong>YouTube</strong>, through YouTube API Services: uploading and scheduling our videos, setting their titles, descriptions, playlists and captions, and reading our own channel's analytics.</li>
+      <li><strong>YouTube</strong>, through YouTube API Services: uploading and scheduling our videos, setting their titles, descriptions, playlists and captions, reading our own channel's analytics, posting a sources comment on our videos, and reading the comments on them so we can moderate spam.</li>
       <li><strong>Instagram</strong>, through Meta's Instagram API: publishing our Reels, reading their insights, and reading the comments on our posts so we can hide spam.</li>
-      <li><strong>TikTok and Bluesky</strong> posts go out through Buffer, a scheduling service with its own privacy policy. We read replies to our Bluesky posts through Bluesky's public API.</li>
+      <li><strong>Bluesky</strong> posts go out from our own signed-in Bluesky session, using an app password we hold as a Cloudflare secret. We read and moderate replies to our Bluesky posts through our own signed-in session too, with a separate app password kept on the channel owner's computer.</li>
+      <li><strong>TikTok</strong> posts go out through Buffer, a scheduling service with its own privacy policy. Buffer is also the fallback for our Instagram and Bluesky posts.</li>
     </ul>
+    <p>After a post goes out, the apps read our own post back to check it went out as intended, and add a sources comment to our Instagram and YouTube posts (on Bluesky, a reply to our own post). They keep no copy of the video.</p>
 
     <h2>Information about other people</h2>
     <p>When someone comments on or replies to one of our posts, our tools can read that public comment and the commenter's username. We use it only to moderate: hiding clear spam and blocking spam accounts, with each action logged. We never send automated replies. We don't collect anything else about viewers: no email addresses, no contact lists, no tracking.</p>
@@ -32,8 +34,10 @@
     <h2>Where it's kept and for how long</h2>
     <ul>
       <li>On the channel owner's computer: the apps' sign-in tokens, our analytics records and the moderation log.</li>
-      <li>On Cloudflare: the Instagram sign-in token and the posting schedule, and each video while it waits to be published. Staged videos are deleted automatically about 30 days after upload.</li>
-      <li>Moderation log entries are kept no longer than 12 months.</li>
+      <li>On Cloudflare: the Instagram sign-in token, the Bluesky session and app password, the posting schedule and job records, and each video while it waits to be published. Staged videos are deleted automatically about 30 days after upload.</li>
+      <li>YouTube comment text and commenters' names are deleted or refreshed within 30 days of being read.</li>
+      <li>Moderation log entries for the other platforms are kept no longer than 12 months.</li>
+      <li>If our access to YouTube ends and cannot be restored, the YouTube data we hold is deleted within 30 days.</li>
     </ul>
     <p>Information leaves our hands only to reach the platforms themselves and the service providers named here, so they can do the posting.</p>
 
@@ -44,7 +48,7 @@
     <p>Access for Fathom Deeper Publisher can be removed at any time in Instagram under Settings, Apps and websites.</p>
 
     <h2 id="deletion">Deleting your information</h2>
-    <p>To have anything we hold about you deleted, for example one of your comments in our moderation log, email <a href="mailto:fathomdeeper.ocean@gmail.com">fathomdeeper.ocean@gmail.com</a> with your username and the post it was on. We'll delete it within 30 days and confirm by email. Editing or deleting a comment on the platform itself is done in that platform's app.</p>
+    <p>To have anything we hold about you deleted, for example one of your comments in our moderation log, email <a href="mailto:fathomdeeper.ocean@gmail.com">fathomdeeper.ocean@gmail.com</a> with your username and the post it was on. We'll delete it within 7 days and confirm by email. Editing or deleting a comment on the platform itself is done in that platform's app.</p>
 
     <h2>This website</h2>
     <p>This site is a set of plain pages hosted on GitHub Pages. It sets no cookies, runs no analytics and loads nothing from other sites. GitHub may log visits, such as IP addresses, for security; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
